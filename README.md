@@ -2,6 +2,8 @@
 
 This is a [Blitz.js](https://github.com/blitz-js/blitz) app.
 
+Dummy change 
+
 # **demo-blitz**
 
 ## Getting Started
