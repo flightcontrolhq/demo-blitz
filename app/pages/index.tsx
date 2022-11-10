@@ -58,7 +58,7 @@ const Home: BlitzPage = () => {
           <Image src={logo} alt="blitzjs" />
         </div>
         <p>
-          <strong>Congrats!</strong> Your app is ready, including user sign-up and log-in.
+          <strong>Congrats to you!!!!</strong> Your app is ready, including user sign-up and log-in.
         </p>
         <div className="buttons" style={{ marginTop: "1rem", marginBottom: "1rem" }}>
           <Suspense fallback="Loading...">
