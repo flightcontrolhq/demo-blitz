@@ -186,22 +186,6 @@
           "startCommand": "blitz start",
           "healthCheckPath": "/",
           "enableCloudfrontSwr": true
-        },
-        {
-          "id": "database-MoNOaf",
-          "name": "Database",
-          "port": 5432,
-          "type": "rds",
-          "engine": "postgres",
-          "private": false,
-          "storage": 20,
-          "maxStorage": 100,
-          "instanceSize": "db.t4g.micro",
-          "engineVersion": "13",
-          "deletionProtection": false,
-          "applyChangesImmediately": false,
-          "autoUpgradeMinorVersions": true,
-          "connectionStringEnvVarName": "DATABASE_URL"
         }
       ]
     }
