@@ -42,8 +42,8 @@
       ]
     },
     {
-      "id": "staging",
-      "name": "staging",
+      "id": "main-manual",
+      "name": "main-manual",
       "region": "ca-central-1",
       "source": { "branch": "main", "trigger": "manual" },
       "services": [
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "id": "other-branch",
-      "name": "Production",
+      "id": "other-branch-manual",
+      "name": "other-branch-manual",
       "region": "ca-central-1",
       "source": { "branch": "other-branch", "trigger": "manual" },
       "services": [
@@ -161,6 +161,31 @@
           "applyChangesImmediately": false,
           "autoUpgradeMinorVersions": true,
           "connectionStringEnvVarName": "DATABASE_URL"
+        }
+      ]
+    },
+    {
+      "id": "preview",
+      "name": "preview",
+      "region": "ca-central-1",
+      "source": {"pr": true },
+      "services": [
+        {
+          "id": "blitz-app-ybriyO",
+          "cpu": 0.25,
+          "name": "Blitz App",
+          "port": 3000,
+          "type": "fargate",
+          "memory": 0.5,
+          "basePath": ".",
+          "buildType": "nixpacks",
+          "buildCommand": "blitz build && blitz prisma migrate deploy",
+          "envVariables": {},
+          "maxInstances": 1,
+          "minInstances": 1,
+          "startCommand": "blitz start",
+          "healthCheckPath": "/",
+          "enableCloudfrontSwr": true
         }
       ]
     }
