@@ -1,5 +1,4 @@
 {
-  "$schema": "https://app.flightcontrol.dev/schema.json",
   "environments": [
     {
       "id": "production",
