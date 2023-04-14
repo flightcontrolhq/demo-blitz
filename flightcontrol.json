@@ -172,7 +172,7 @@
       "id": "preview",
       "name": "preview",
       "region": "ca-central-1",
-      "source": { "branch": "other-branch", "pr":"true" },
+      "source": { "branch": "other-branch", "pr":true },
       "services": [
         {
           "id": "blitz-app-ybriyO",
