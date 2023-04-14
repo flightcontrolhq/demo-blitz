@@ -1,4 +1,5 @@
 {
+  "$schema": "https://app.flightcontrol.dev/schema.json",
   "environments": [
     {
       "id": "production",
@@ -21,8 +22,7 @@
           "minInstances": 1,
           "startCommand": "blitz start",
           "healthCheckPath": "/",
-          "enableCloudfrontSwr": true,
-          "versionHistoryCount": 10
+          "enableCloudfrontSwr": true
         },
         {
           "id": "database-MoNOaf",
@@ -63,8 +63,7 @@
           "minInstances": 1,
           "startCommand": "blitz start",
           "healthCheckPath": "/",
-          "enableCloudfrontSwr": true,
-          "versionHistoryCount": 10
+          "enableCloudfrontSwr": true
         },
         {
           "id": "database-MoNOaf",
@@ -105,8 +104,7 @@
           "minInstances": 1,
           "startCommand": "blitz start",
           "healthCheckPath": "/",
-          "enableCloudfrontSwr": true,
-          "versionHistoryCount": 10
+          "enableCloudfrontSwr": true
         },
         {
           "id": "database-MoNOaf",
@@ -130,7 +128,7 @@
       "id": "other-branch",
       "name": "Production",
       "region": "ca-central-1",
-      "source": { "branch": "other-branch"},
+      "source": { "branch": "other-branch" },
       "services": [
         {
           "id": "blitz-app-ybriyO",
@@ -147,8 +145,7 @@
           "minInstances": 1,
           "startCommand": "blitz start",
           "healthCheckPath": "/",
-          "enableCloudfrontSwr": true,
-          "versionHistoryCount": 10
+          "enableCloudfrontSwr": true
         },
         {
           "id": "database-MoNOaf",
@@ -172,7 +169,7 @@
       "id": "preview",
       "name": "preview",
       "region": "ca-central-1",
-      "source": { "branch": "other-branch", "pr":true },
+      "source": {"pr": true },
       "services": [
         {
           "id": "blitz-app-ybriyO",
@@ -189,8 +186,7 @@
           "minInstances": 1,
           "startCommand": "blitz start",
           "healthCheckPath": "/",
-          "enableCloudfrontSwr": true,
-          "versionHistoryCount": 10
+          "enableCloudfrontSwr": true
         },
         {
           "id": "database-MoNOaf",
