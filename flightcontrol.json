@@ -163,31 +163,6 @@
           "connectionStringEnvVarName": "DATABASE_URL"
         }
       ]
-    },
-    {
-      "id": "preview",
-      "name": "preview",
-      "region": "ca-central-1",
-      "source": {"pr": true },
-      "services": [
-        {
-          "id": "blitz-app-ybriyO",
-          "cpu": 0.25,
-          "name": "Blitz App",
-          "port": 3000,
-          "type": "fargate",
-          "memory": 0.5,
-          "basePath": ".",
-          "buildType": "nixpacks",
-          "buildCommand": "blitz build && blitz prisma migrate deploy",
-          "envVariables": {},
-          "maxInstances": 1,
-          "minInstances": 1,
-          "startCommand": "blitz start",
-          "healthCheckPath": "/",
-          "enableCloudfrontSwr": true
-        }
-      ]
     }
   ]
 }
