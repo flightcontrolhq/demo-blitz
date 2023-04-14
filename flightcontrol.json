@@ -124,8 +124,8 @@
       ]
     },
     {
-      "id": "other-branch",
-      "name": "Production",
+      "id": "other-branch-standard",
+      "name": "Other Branch Standard",
       "region": "ca-central-1",
       "source": { "branch": "other-branch" },
       "services": [
